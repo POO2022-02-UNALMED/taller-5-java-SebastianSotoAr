@@ -9,10 +9,9 @@ public class Zoologico {
 	
 	public Zoologico() {}
 	
-	public Zoologico(String nombre, String ubicacion, ArrayList<Zona> zonas) {
+	public Zoologico(String nombre, String ubicacion) {
 		this.setNombre(nombre);
 		this.setUbicacion(ubicacion);
-		this.zonas = zonas;
 	}
 	
 	public void agregarZonas(Zona zona) {
