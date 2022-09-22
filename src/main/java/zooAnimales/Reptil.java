@@ -9,6 +9,10 @@ public class Reptil extends Animal{
 	public static int serpientes;
 	private String colorEscamas;
 	private int largoCola;
+	
+	public Reptil() {
+		Reptil.listado.add(this);
+	}
 
 	public Reptil(String nombre, int edad, String habitat, String genero, ArrayList<Zona> zona, String colorEscamas, int largoCola) {
 		super(nombre, edad, habitat, genero, zona);

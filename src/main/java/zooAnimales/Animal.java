@@ -11,6 +11,8 @@ public class Animal {
 	private String habitat;
 	private String genero;
 	private ArrayList<Zona> zona;
+	
+	public Animal() {}
 
 	public Animal(String nombre, int edad, String habitat, String genero, ArrayList<Zona> zona) {
 		this.totalAnimales = this.totalAnimales + 1;

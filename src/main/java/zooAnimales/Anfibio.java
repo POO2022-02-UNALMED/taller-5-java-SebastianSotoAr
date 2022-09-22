@@ -9,6 +9,10 @@ public class Anfibio extends Animal {
 	public static int salamandras;
 	private String colorPiel;
 	private boolean venenoso;
+	
+	public Anfibio() {
+		Anfibio.listado.add(this);
+	}
 
 	public Anfibio(String nombre, int edad, String habitat, String genero, ArrayList<Zona> zona, String colorPiel, boolean venenoso) {
 		super(nombre, edad, habitat, genero, zona);
