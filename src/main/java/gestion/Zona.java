@@ -7,7 +7,7 @@ public class Zona {
 	
 	private String nombre;
 	private ArrayList<Zoologico> zoo = new ArrayList<Zoologico>(1);
-	private ArrayList<Animal> animales;
+	private ArrayList<Animal> animales = new ArrayList<Animal>();
 
 	public Zona() {}
 	
