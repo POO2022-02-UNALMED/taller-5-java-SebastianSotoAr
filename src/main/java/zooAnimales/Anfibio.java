@@ -57,5 +57,29 @@ public class Anfibio extends Animal {
 	public void setVenenoso(boolean venenoso) {
 		this.venenoso = venenoso;
 	}
+
+	public static ArrayList<Anfibio> getListado() {
+		return listado;
+	}
+
+	public static void setListado(ArrayList<Anfibio> listado) {
+		Anfibio.listado = listado;
+	}
+
+	public static int getRanas() {
+		return ranas;
+	}
+
+	public static void setRanas(int ranas) {
+		Anfibio.ranas = ranas;
+	}
+
+	public static int getSalamandras() {
+		return salamandras;
+	}
+
+	public static void setSalamandras(int salamandras) {
+		Anfibio.salamandras = salamandras;
+	}
 	
 }

@@ -46,5 +46,30 @@ public class Ave extends Animal{
 
 	public void setColorPlumas(String colorPlumas) {
 		this.colorPlumas = colorPlumas;
-	}	
+	}
+
+	public static ArrayList<Ave> getListado() {
+		return listado;
+	}
+
+	public static void setListado(ArrayList<Ave> listado) {
+		Ave.listado = listado;
+	}
+
+	public static int getHalcones() {
+		return halcones;
+	}
+
+	public static void setHalcones(int halcones) {
+		Ave.halcones = halcones;
+	}
+
+	public static int getAguilas() {
+		return aguilas;
+	}
+
+	public static void setAguilas(int aguilas) {
+		Ave.aguilas = aguilas;
+	}
+	
 }
