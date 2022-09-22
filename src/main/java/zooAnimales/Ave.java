@@ -24,12 +24,12 @@ public class Ave extends Animal{
 	}
 	
 	public static void crearHalcon(String nombre, int edad, String genero, ArrayList<Zona> zona) {
-		Ave.listado.add(new Ave(nombre, edad, "montañas", genero, zona, "cafe glorioso"));
+		Ave.listado.add(new Ave(nombre, edad, "montanas", genero, zona, "cafe glorioso"));
 		++Ave.halcones;
 	}
 	
 	public static void crearAguila(String nombre, int edad, String genero, ArrayList<Zona> zona) {
-		Ave.listado.add(new Ave(nombre, edad, "montañas", genero, zona, "blanco y amarillo"));
+		Ave.listado.add(new Ave(nombre, edad, "montanas", genero, zona, "blanco y amarillo"));
 		++Ave.aguilas;
 	}
 
