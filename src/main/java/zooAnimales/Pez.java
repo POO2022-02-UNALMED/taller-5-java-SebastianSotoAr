@@ -29,14 +29,18 @@ public class Pez extends Animal{
 		return "nadar";
 	}
 	
-	public void crearSalmon(String nombre, int edad, String genero) {
-		Pez.listado.add(new Pez(nombre, edad, "oceano", genero, "rojo", 6));
-		++Pez.salmones;	
+	public Pez crearSalmon(String nombre, int edad, String genero) {
+		Pez salmon = new Pez(nombre, edad, "oceano", genero, "rojo", 6);
+		Pez.listado.add(salmon);
+		++Pez.salmones;
+		return salmon;
 	}
 	
-	public void crearBacalao(String nombre, int edad, String genero, ArrayList<Zona> zona) {
-		Pez.listado.add(new Pez(nombre, edad, "oceano", genero, "gris", 6));
+	public Pez crearBacalao(String nombre, int edad, String genero, ArrayList<Zona> zona) {
+		Pez bacalao = new Pez(nombre, edad, "oceano", genero, "gris", 6);
+		Pez.listado.add(bacalao);
 		++Pez.bacalaos;
+		return bacalao;
 	}
 
 	public int getCantidadAletas() {
