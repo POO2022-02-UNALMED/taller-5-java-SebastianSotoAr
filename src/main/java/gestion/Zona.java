@@ -9,6 +9,8 @@ public class Zona {
 	private ArrayList<Zoologico> zoo = new ArrayList<Zoologico>(1);
 	private ArrayList<Animal> animales;
 
+	public Zona() {}
+	
 	public Zona(String nombre, ArrayList<Zoologico> zoo, ArrayList<Animal> animales) {
 		this.setNombre(nombre);
 		this.zoo.add(zoo.get(0));

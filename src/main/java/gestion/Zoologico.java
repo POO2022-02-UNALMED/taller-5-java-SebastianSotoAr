@@ -7,7 +7,8 @@ public class Zoologico {
 	private String ubicacion;
 	private ArrayList<Zona> zonas;
 	
-
+	public Zoologico() {}
+	
 	public Zoologico(String nombre, String ubicacion, ArrayList<Zona> zonas) {
 		this.setNombre(nombre);
 		this.setUbicacion(ubicacion);
