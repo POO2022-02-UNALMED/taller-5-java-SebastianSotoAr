@@ -1,7 +1,6 @@
 package zooAnimales;
 
 import java.util.ArrayList;
-import gestion.Zona;
 
 public class Reptil extends Animal{
 	private static ArrayList<Reptil> listado;
@@ -14,8 +13,8 @@ public class Reptil extends Animal{
 		Reptil.listado.add(this);
 	}
 
-	public Reptil(String nombre, int edad, String habitat, String genero, ArrayList<Zona> zona, String colorEscamas, int largoCola) {
-		super(nombre, edad, habitat, genero, zona);
+	public Reptil(String nombre, int edad, String habitat, String genero, String colorEscamas, int largoCola) {
+		super(nombre, edad, habitat, genero);
 		this.setColorEscamas(colorEscamas);
 		this.setLargoCola(largoCola);
 		Reptil.listado.add(this);
@@ -29,13 +28,13 @@ public class Reptil extends Animal{
 		return "reptar";
 	}
 	
-	public void crearIguana(String nombre, int edad, String genero, ArrayList<Zona> zona) {
-		Reptil.listado.add(new Reptil(nombre, edad, "humedal", genero, zona, "verde", 3));
+	public void crearIguana(String nombre, int edad, String genero) {
+		Reptil.listado.add(new Reptil(nombre, edad, "humedal", genero, "verde", 3));
 		++Reptil.iguanas;
 	}
 	
-	public void crearSerpiente(String nombre, int edad, String genero, ArrayList<Zona> zona) {
-		Reptil.listado.add(new Reptil(nombre, edad, "jungla", genero, zona, "blanco", 1));
+	public void crearSerpiente(String nombre, int edad, String genero) {
+		Reptil.listado.add(new Reptil(nombre, edad, "jungla", genero, "blanco", 1));
 		++Reptil.serpientes;
 	}
 

@@ -14,13 +14,12 @@ public class Animal {
 	
 	public Animal() {}
 
-	public Animal(String nombre, int edad, String habitat, String genero, ArrayList<Zona> zona) {
+	public Animal(String nombre, int edad, String habitat, String genero) {
 		this.totalAnimales = this.totalAnimales + 1;
 		this.nombre = nombre;
 		this.edad = edad;
 		this.habitat = habitat;
-		this.genero = genero;
-		this.zona = zona;	
+		this.genero = genero;	
 	}
 	
 	public String movimiento() {
