@@ -19,7 +19,12 @@ public class Ave extends Animal{
 	}
 	
 	public static int cantidadAves() {
-		return Ave.listado.size();
+		if (Ave.listado == null) {
+			return 0;
+		} else {
+			return Ave.listado.size();
+	
+		}
 	}
 
 	public String movimiento() {

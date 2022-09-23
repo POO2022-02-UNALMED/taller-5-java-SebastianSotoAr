@@ -21,7 +21,11 @@ public class Reptil extends Animal{
 	}
 	
 	public static int cantidadReptiles() {
-		return Reptil.listado.size();
+		if (Reptil.listado == null) {
+			return 0;
+		} else {
+			return Reptil.listado.size();
+		}
 	}
 	
 	public String movimiento() {
