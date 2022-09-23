@@ -17,9 +17,8 @@ public class Zona {
 	}
 	
 	public void agregarAnimales(Animal animal) {
-		if (animal != null) {
-			this.animales.add(animal);
-		}
+		this.animales.add(animal);
+		animal.setZona(this);
 	}
 	
 	public int cantidadAnimales() {
