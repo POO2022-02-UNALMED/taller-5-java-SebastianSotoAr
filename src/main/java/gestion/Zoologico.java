@@ -15,15 +15,15 @@ public class Zoologico {
 	}
 	
 	public void agregarZonas(Zona zona) {
-		if (zona != null) {
 			this.zonas.add(zona);
-		}
 	}
 	
 	public int cantidadTotalAnimales() {
 		int cantidad = 0;
-		for (Zona zona: this.zonas) {
-			cantidad += zona.cantidadAnimales();
+		if (this.zonas != null) {
+			for (Zona zona: this.zonas) {
+				cantidad += zona.cantidadAnimales();
+			}
 		}
 		return cantidad;
 	}
