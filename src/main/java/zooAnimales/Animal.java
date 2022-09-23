@@ -12,10 +12,12 @@ public class Animal {
 	private String genero;
 	private ArrayList<Zona> zona;
 	
-	public Animal() {}
+	public Animal() {
+		++Animal.totalAnimales;
+	}
 
 	public Animal(String nombre, int edad, String habitat, String genero) {
-		Animal.setTotalAnimales(Animal.getTotalAnimales() + 1);
+		++Animal.totalAnimales;
 		this.nombre = nombre;
 		this.edad = edad;
 		this.habitat = habitat;
